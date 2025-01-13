@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-Module.exports = {
-  content: [".src/**/*.{html,js}"],
+module.exports = {
+  content: ["src/**/*.{html,js}"],
   theme: {
     extend: {},
   },
@@ -8,7 +8,10 @@ Module.exports = {
     function ({ addBase }) {
       addBase({
         input: {
-          "@apply border border-black": {}, //Applies black border to all inputs
+          "@apply border border-black": "", //Applies black border to all inputs
+        },
+        label: {
+          "@apply text-white font-medium": "",
         },
       });
     },
